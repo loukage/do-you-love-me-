@@ -8,6 +8,14 @@ yesBtn.addEventListener("click", () => {
   question.innerHTML = "I love you too baby 😘";
   gif.src = "https://media.tenor.com/bW1BRyLj9B8AAAAi/quby-pentol.gif";
 });
+// Change the text, gif, and start the heart rain when the "Yes" button is clicked
+yesBtn.addEventListener("click", () => {
+    question.innerHTML = "I love you too baby 😘";
+    gif.src = "https://media.tenor.com/bW1BRyLj9B8AAAAi/quby-pentol.gif";
+
+    // Start the heart rain
+    setInterval(createHeart, 300); // Creates a heart every 300 ms
+});
 
 // Make the No button move randomly on hover
 noBtn.addEventListener("mouseover", () => {
